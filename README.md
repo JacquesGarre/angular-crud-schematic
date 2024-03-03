@@ -1,28 +1,19 @@
-# Getting Started With Schematics
+# Angular schematic to create a crud component
 
-This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
+## Requirements
+    Git version 2.25+ (git --version)
+    node v20.10+ (node --version)
 
-### Testing
+# Installation
+    git clone 
+    npm install -g @angular/cli
+    npm install -g @angular-devkit/schematics-cli
+    npm install
 
-To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
+# Usage
 
-Check the documentation with
+    cd crud
+    schematics .:crud --dry-run=false
 
-```bash
-schematics --help
-```
 
-### Unit Testing
 
-`npm run test` will run the unit tests, using Jasmine as a runner and test framework.
-
-### Publishing
-
-To publish, simply do:
-
-```bash
-npm run build
-npm publish
-```
-
-That's it!
