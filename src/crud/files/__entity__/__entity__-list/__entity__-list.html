@@ -1,0 +1,21 @@
+<h1><%= capitalizedEntity %></h1>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <% for(let prop in properties) { %><th><%= prop %></th>
+                <% } %><th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let <%= entity %> of <%= entity %>s">
+                <% for(let prop in properties) { %><td>{{ <%= entity %>.<%= prop %> }}</td>
+                <% } %><td>
+                    <button class="btn btn-primary">Edit</button>
+                    <button class="btn btn-danger">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-success">Add New <%= capitalizedEntity %></button>
+</div>

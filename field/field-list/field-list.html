@@ -1,0 +1,23 @@
+<h1>Field</h1>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>required</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let field of fields">
+                <td>{{ field.name }}</td>
+                <td>{{ field.required }}</td>
+                <td>
+                    <button class="btn btn-primary">Edit</button>
+                    <button class="btn btn-danger">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-success">Add New Field</button>
+</div>

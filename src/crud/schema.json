@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "$id": "NewRepoSchematic",
+    "title": "ng new options schema",
+    "type": "object",
+    "description": "Initialise a new project",
+    "properties": {
+        "entity": {
+            "type": "string",
+            "description": "The name of the entity (Ex: field)",
+            "x-prompt": "Name of the entity (Ex: field) :",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            }
+        },
+        "apiEndpoint": {
+            "type": "string",
+            "description": "The api (Ex: http://localhost:8000/api/fields)",
+            "x-prompt": "The api endpoint (Ex: http://localhost:8000/api/fields) :",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            }
+        },
+        "json": {
+            "type": "string",
+            "description": "The json that represents the entity",
+            "x-prompt": "The json that represents the entity (Ex: {\"name\": \"string\", \"required\": \"boolean\"}) :",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            }
+        }
+    }
+}
